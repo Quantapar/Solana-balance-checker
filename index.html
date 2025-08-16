@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solana Balance Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="solona.png" />
+
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="container">
+      <h1>Solana Balance Checker</h1>
+      <p>Enter a Solana wallet address to see its SOL balance.</p>
+
+      <input
+        type="text"
+        id="publicKey"
+        placeholder="Enter your public key"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+        spellcheck="false"
+      />
+
+      <button id="checkBalance">Check Balance</button>
+
+      <div id="result" class="hidden">
+        <h2>Balance Details:</h2>
+        <p id="solBalance"></p>
+
+        <button id="resetBtn" class="hidden">Reset</button>
+      </div>
+
+      <div id="error" class="hidden error"></div>
+    </div>
+
+    <div id="transactions" class="hidden">
+      <h2>Recent Transactions:</h2>
+      <ul id="txList"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
