@@ -5,7 +5,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("assets/images/solanaGradient.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
